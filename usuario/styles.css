@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .cartela {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.cartela {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.linha {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.celula {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.celula:last-child {
+  border-right: none;
+}
+
+  }
+  
+  .linha {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .celula {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+  }
+  
+  .celula:last-child {
+    border-right: none;
+  }
+  
+  .celula:nth-child(3) {
+    background-color: #ffd700; /* Cor de fundo para a célula "Free" */
+    color: #000;
+  }
+
+  .imagem {
+    width: 30px; /* Largura desejada */
+    height: auto; /* Altura automática para manter a proporção original */
+}

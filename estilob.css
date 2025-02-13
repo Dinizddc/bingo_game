@@ -1,0 +1,84 @@
+body {
+    background-color: #f7d87b;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    background-image: url('../jogo/img/imagem\ da\ URL.jpg');
+    position: relative;
+    width: 100%; /*largura (preencher o espaço 100%)*/
+    padding: 5px; /*o espaço entre a letra e a borda da caixa (unidade de medida)*/
+    display: flex; /*é uma maneira poderosa de criar layouts responsivos e flexíveis em CSS*/
+    justify-content: space-around; /**/ 
+}
+
+#lista{
+    list-style-type: none; 
+    padding: 0;
+    margin-top: 25px; /*margem do herder*/
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-family: Arial;
+    font-size: 35px;
+    font-weight: bold;
+    transition: font-size 0.5s ease-in-out;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #555;
+}
+
+h3 {
+    color: #5a4e4e;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 300;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin-bottom: 5px;
+    width: 50px;
+}
+
+.button-container {
+    display: inline-block;
+    margin-right: 10px;
+}

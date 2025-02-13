@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../jogo/img/imagem da URL.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="estilob.css">
+  <title>Bingo</title>
+
+
+
+</head>
+<body>
+
+  <header id="menu">
+    <h1>IADESL.A9</h1>
+    <nav>
+      <ul id="lista">
+          <!-- li*3>a[href="#"] -->
+          <li><a href="./QR-code/QR-code.html">Cartelas</a></li>
+          <li><a href="https://www.instagram.com/iadesl_area09/">Instagram</a></li>
+
+      </ul>
+  </nav>
+  </header>
+
+  <h1>Bem-vindo ao jogo de Bingo!</h1>
+
+  <div class="button-container">
+    <button onclick="sortear()">Sortear Número</button>
+  </div>
+
+  <h2>Número sorteado:</h2>
+  <p id="numeroSorteado"></p>
+
+  <h3>Números sorteados até o momento:</h3>
+  <ul id="numerosSorteados"></ul>
+
+  <div class="button-container">
+    <button onclick="reiniciar()">Reiniciar Jogo</button>
+  </div>
+
+  <script src="bingo.js"></script>
+</body>
+</html
