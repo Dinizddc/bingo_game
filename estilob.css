@@ -7,7 +7,7 @@ body {
 }
 
 #menu {
-    background-image: url('./img/imagem\ da\ URL.jpg');
+    background-image: url('./img/imagemdaurl.jpg');
     position: relative;
     width: 100%; /*largura (preencher o espaço 100%)*/
     padding: 5px; /*o espaço entre a letra e a borda da caixa (unidade de medida)*/
