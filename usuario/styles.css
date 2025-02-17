@@ -1,21 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .cartela {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #A6A6A6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,52 +14,53 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 300px;
+  position: relative;
 }
 
 .linha {
   display: flex;
-  border-bottom: 1px solid #ccc;
 }
 
 .celula {
   flex: 1;
   text-align: center;
   padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
   border-right: 1px solid #ccc;
   border-top: 1px solid #ccc;
+  cursor: pointer; /* Muda o cursor para indicar que a célula é clicável */
 }
 
 .celula:last-child {
   border-right: none;
 }
 
-  }
-  
-  .linha {
-    display: flex;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .celula {
-    flex: 1;
-    text-align: center;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    border-right: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-  }
-  
-  .celula:last-child {
-    border-right: none;
-  }
-  
-  .celula:nth-child(3) {
-    background-color: #ffd700; /* Cor de fundo para a célula "Free" */
-    color: #000;
-  }
+/* Estilo para a célula central (onde a imagem ficará) */
+.celula.central {
+  background-color: #FDD835; /* Cor de fundo para a célula "Free" */
+  color: #000;
+}
 
-  .imagem {
-    width: 30px; /* Largura desejada */
-    height: auto; /* Altura automática para manter a proporção original */
+/* Estilo da imagem no centro da cartela */
+.imagem {
+  width: 100%; /* A largura da imagem será 100% da largura da célula */
+  height: 100%; /* A altura da imagem será 100% da altura da célula */
+  object-fit: contain; /* Manter a proporção da imagem */
+}
+
+/* Aplicar a cor da célula central nas células da coluna central */
+.linha .celula:nth-child(3) {
+  background-color: #FDD835; /* A cor da célula central */
+  color: #000;
+}
+
+/* Estilo para as células na mesma coluna da célula central */
+.linha:nth-child(1) .celula:nth-child(3),
+.linha:nth-child(2) .celula:nth-child(3),
+.linha:nth-child(3) .celula:nth-child(3),
+.linha:nth-child(4) .celula:nth-child(3),
+.linha:nth-child(5) .celula:nth-child(3) {
+  background-color: #FDD835; /* A mesma cor de fundo da célula central */
+  color: #000;
 }
