@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cartela de Bingo</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartela de Bingo</title>
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -28,13 +27,13 @@
     <div class="celula"></div>
     <div class="celula"></div>
   </div>
-  <!-- Linha 3 -->
+  <!-- Linha 3 (com a célula central contendo a imagem) -->
   <div class="linha">
     <div class="celula"></div>
     <div class="celula"></div>
     <div class="celula central">
-        <img src="icone/biblia logo.png" alt="Bíblia" class="imagem">
-      </div>
+        <img src="../img/Icone/biblia logo.png" alt="Imagem Central" class="imagem">
+    </div>
     <div class="celula"></div>
     <div class="celula"></div>
   </div>
@@ -54,10 +53,12 @@
     <div class="celula"></div>
     <div class="celula"></div>
   </div>
+
+  <!-- Linha vertical no meio da cartela -->
+  <div class="linha-vertical"></div>
+
 </div>
 
-<script src="cartela.js">
-preencherCartela();
-</script>
+<script src="cartela.js">preencherCartela();</script>
 </body>
 </html>
