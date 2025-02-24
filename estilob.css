@@ -1,84 +1,248 @@
-body {
-    background-color: #f7d87b;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
+          /* Reset básico */
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Estilo geral do body */
+        body {
+            background-color: #f7d87b;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Cabeçalho Modernizado */
+        #menu {
+            background-image: url('./img/imagemdaurl.jpg');
+            position: relative;
+            width: 100%; /*largura (preencher o espaço 100%)*/
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        #menu h1 {
+            font-size: 3rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #262523; /* Cor para o título */
+        }
+        
+        /* Menu de navegação */
+        #lista {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            padding: 0;
+        }
+        
+        /* Estilos dos links */
+        nav a {
+            text-decoration: none;              /* Remove o sublinhado padrão */
+            color: #F5F5F5;                     /* Cor clara para o texto do link */
+            font-weight: 400;                    /* Peso médio da fonte */
+            font-size: 1.0rem;                   /* Tamanho da fonte */
+            padding: 5px 5px;                   /* Espaçamento interno */
+            border-radius: 5px;                  /* Bordas arredondadas */
+            position: relative;                  /* Para usar o pseudo-elemento */
+            transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+        }
+        
+        /* Efeito ao passar o mouse (hover) */
+        nav a:hover {
+            color: #262626;                     /* Cor escura para o destaque */
+            transform: translateY(-4px);        /* Efeito de movimentação para cima */
+            letter-spacing: 1px;                /* Aumenta o espaçamento das letras */
+        }
+        
+        
+        li {
+            /* Define o espaçamento externo entre os itens da lista (distância entre os elementos) */
+            margin: 40px;
+        
+            /* Define o tamanho da fonte dentro do <li>. O "rem" é relativo ao tamanho da fonte base */
+            font-size: 1.2rem;
+        
+            /* Define o preenchimento interno do <li>, ou seja, a distância entre o conteúdo e a borda */
+            padding: 30px;
+        
+            /* Define a largura do <li> como 60px */
+            width: 90px;
+        
+            /* Define a altura do <li> como 60px */
+            height: 25px;
+        
+            /* Adiciona uma borda de 2px de espessura, cor escura (quase preta) */
+            border: 2px solid #333;
+        
+            /* Arredonda os cantos da borda em 80%, tornando o <li> circular */
+            border-radius: 20%;
+        
+            /* Aplica o layout flexível ao <li>, permitindo que os itens filhos sejam centralizados */
+            display: flex;
+        
+            /* Alinha verticalmente o conteúdo dentro do <li> */
+            align-items: center;
+        
+            /* Alinha horizontalmente o conteúdo dentro do <li> */
+            justify-content: center;
+        
+            /* Define a cor de fundo do <li> como laranja */
+            background-color: #BF8049;
+        
+            /* Define uma transição suave para a transformação (como o efeito de aumento ao passar o mouse) */
+            transition: transform 0.3s ease;
+        }
+        
+        
+        li:hover {
+            transform: scale(1.1);
+        }
+        
+        
+        /* Títulos e textos */
+        h1, h2, h3 {
+            font-weight: 600;
+        }
+        
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+            color: #333;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            color: #444;
+        }
+        
+        /* Estilo do campo 'Números sorteados até o momento' */
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 30px;
+            color: #444;
+            padding: 5px;
+            border-radius: 5px; /* Bordas arredondadas */
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+            text-transform: uppercase;
+            font-weight: bold;
+        }
 
-#menu {
-    background-image: url('./img/imagemdaurl.jpg');
-    position: relative;
-    width: 100%; /*largura (preencher o espaço 100%)*/
-    padding: 5px; /*o espaço entre a letra e a borda da caixa (unidade de medida)*/
-    display: flex; /*é uma maneira poderosa de criar layouts responsivos e flexíveis em CSS*/
-    justify-content: space-around; /**/ 
-}
-
-#lista{
-    list-style-type: none; 
-    padding: 0;
-    margin-top: 25px; /*margem do herder*/
-}
-
-nav li {
-    display: inline;
-    margin-right: 25px;
-}
-
-ul a{
-    text-decoration: none;
-    color: black;
-
-}
-
-h1 {
-    color: #333;
-}
-
-p {
-    font-family: Arial;
-    font-size: 35px;
-    font-weight: bold;
-    transition: font-size 0.5s ease-in-out;
-}
-
-
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 15px;
-}
-
-h2 {
-    color: #555;
-}
-
-h3 {
-    color: #5a4e4e;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 300;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-li {
-    margin-bottom: 5px;
-    width: 50px;
-}
-
-.button-container {
-    display: inline-block;
-    margin-right: 10px;
-}
+  
+      /* Aumentar o tamanho da fonte da contagem */
+      #contagemNumeros {
+        font-size: 1.3rem;
+        color: #444;
+      }
+        
+        /* Estilo da lista de números sorteados */
+        #numerosSorteados {
+            list-style: none;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px; /* Espaçamento entre os itens */
+            margin-top: 10px;
+        }
+        
+        /* Estilo dos números sorteados */
+        #numerosSorteados li {
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: #BF8049; /* Cor de fundo vibrante para os números */
+            color: #F2F2F2; /* Cor do texto */
+            padding: 1px;
+            border-radius: 30%; /* Tornando os números circulares */
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        #numerosSorteados li:hover {
+            transform: scale(1.1); /* Efeito de aumentar o número ao passar o mouse */
+        }
+        
+        
+        /* Estilo dos números sorteados */
+        p {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #2f2f2f;
+            transition: font-size 0.5s ease-in-out;
+        }
+        
+        
+        /* Estilo dos botões */
+        button {
+            padding: 15px 30px;
+            background-color: #E5971C; /* Cor inicial do botão */
+            color: white;
+            border: none;
+            border-radius: 30px; /* Borda mais arredondada */
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+            box-shadow: 0 4px 8px #BF3C05; /* Sombra suave */
+        }
+        
+        button:hover {
+            background-color: #DC911B; /* Cor de fundo mais escura ao passar o mouse */
+            transform: scale(1.05); /* Leve aumento de tamanho */
+            box-shadow: 0 6px 12px #7F2803; /* Sombra mais forte ao passar o mouse */
+        }
+        
+        button:active {
+            background-color: #73020C; /* Cor ainda mais escura quando pressionado */
+            transform: scale(1.02); /* Reduz um pouco o tamanho */
+        }
+        
+        .button-container {
+            margin-top: 20px;
+        }
+        
+        /* Botão de "Reiniciar Jogo" com outra cor para diferenciar */
+        button:nth-of-type(2) {
+            background-color: #E5971C; /* Verde para o botão de reiniciar */
+        }
+        
+        button:nth-of-type(2):hover {
+            background-color: #DC911B; /* Cor mais escura quando hover */
+            box-shadow: 0 6px 12px #7F2803 /* Sombra verde mais forte */
+        }
+        
+        
+        /* Responsividade */
+        @media screen and (max-width: 768px) {
+            #menu h1 {
+                font-size: 2rem;
+            }
+        
+            h1 {
+                font-size: 1.8rem;
+            }
+        
+            p {
+                font-size: 2rem;
+            }
+        
+            ul {
+                flex-direction: column; /* Torna os links verticais em telas pequenas */
+            }
+        
+            li {
+                width: 70px;
+                height: 70px;
+                font-size: 1.5rem;
+            }
+        }
+        
