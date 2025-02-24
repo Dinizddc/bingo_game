@@ -1,16 +1,26 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff8a00, #e52e71); /* Gradiente de fundo */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh; /* Garantir que o corpo ocupe toda a altura da tela */
+    overflow: hidden;
 }
 
 .imagem {
-    margin-top: 70px;
-    width: 400px; /* Largura desejada */
+    margin-top: 20px; /* Ajuste o topo para um espaço mais suave */
+    width: 300px; /* Aumentar a largura da imagem para 300px */
     height: auto; /* Altura automática para manter a proporção original */
+    border-radius: 10px; /* Bordas arredondadas para um estilo mais suave */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave à imagem */
+    border: 5px solid #fff; /* Borda branca para destacar a imagem */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para efeitos */
+}
+
+.imagem:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
 }
