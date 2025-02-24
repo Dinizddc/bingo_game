@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 100vh;
   margin: 0;
 }
@@ -15,6 +16,7 @@ body {
   padding: 20px;
   width: 300px;
   position: relative;
+  margin: 10px;
 }
 
 .linha {
@@ -38,7 +40,7 @@ body {
 
 /* Estilo para a célula central (onde a imagem ficará) */
 .celula.central {
-  background-color: #FDD835; /* Cor de fundo para a célula "Free" */
+  background-color: #BF8049; /* Cor de fundo para a célula "Free" */
   color: #000;
 }
 
@@ -51,7 +53,7 @@ body {
 
 /* Aplicar a cor da célula central nas células da coluna central */
 .linha .celula:nth-child(3) {
-  background-color: #FDD835; /* A cor da célula central */
+  background-color: #BF8049; /* A cor da célula central */
   color: #000;
 }
 
@@ -61,6 +63,6 @@ body {
 .linha:nth-child(3) .celula:nth-child(3),
 .linha:nth-child(4) .celula:nth-child(3),
 .linha:nth-child(5) .celula:nth-child(3) {
-  background-color: #FDD835; /* A mesma cor de fundo da célula central */
+  background-color: #BF8049; /* A mesma cor de fundo da célula central */
   color: #000;
 }
