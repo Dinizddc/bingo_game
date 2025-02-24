@@ -10,32 +10,34 @@
 <body>
 
   <header id="menu">
-    <h1>IADESL.A9</h1>
-    <nav>
-      <ul id="lista">
-          <!-- li*3>a[href="#"] -->
-          <li><a href="./QR-code/QR-code.html" target="_blank">Cartelas</a></li>
-          <li><a href="https://www.instagram.com/iadesl_area09/" target="_blank">Instagram</a></li>
-      </ul>
-    </nav>
+      <h1>IADESL.A9</h1>
+      <nav>
+          <ul id="lista">
+              <li><a href="./QR-code/QR-code.html" target="_blank">Cartelas</a></li>
+              <li><a href="https://www.instagram.com/iadesl_area09/" target="_blank">Instagram</a></li>
+          </ul>
+      </nav>
   </header>
-
-  <h1>Bem-vindo ao jogo de Bingo!</h1>
-
-  <div class="button-container">
-    <button onclick="sortear()">Sortear Número</button>
-  </div>
-
-  <h2>Número sorteado:</h2>
-  <p id="numeroSorteado"></p>
-
-  <h3>Números sorteados até o momento:</h3>
-  <ul id="numerosSorteados"></ul>
-
-  <div class="button-container">
-    <button onclick="reiniciar()">Reiniciar Jogo</button>
-  </div>
-
+  
+  <main>
+      <h1>Bem-vindo ao jogo de Bingo!</h1>
+  
+      <div class="button-container">
+          <button onclick="sortear()">Sortear Número</button>
+      </div>
+  
+      <h2>Número sorteado:</h2>
+      <p id="numeroSorteado">-</p>
+  
+      <h3>Números sorteados até o momento: <span id="contagemNumeros">0</span></h3>
+      <ul id="numerosSorteados"></ul>
+  
+      <div class="button-container">
+          <button onclick="reiniciar()">Reiniciar Jogo</button>
+      </div>
+  </main>
+  
   <script src="bingo.js"></script>
+
 </body>
 </html>
