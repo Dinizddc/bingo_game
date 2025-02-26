@@ -46,6 +46,11 @@ body {
 }
 
 /* Estilos dos links */
+ul{
+  display: flex;
+  flex-direction: row;
+}
+
 a {
   text-decoration: none;
   color: #f5f5f5;
@@ -63,8 +68,6 @@ a:hover {
 li {
   /* Define o espaçamento externo entre os itens da lista (distância entre os elementos) */
   margin: 10px;
-  /* Define o tamanho da fonte dentro do <li>. O "rem" é relativo ao tamanho da fonte base */
-  font-size: 1.2rem;
   /* Define o preenchimento interno do <li>, ou seja, a distância entre o conteúdo e a borda */
   padding: 15px 30px;
   /* Define a largura do <li> como 60px */
@@ -234,7 +237,6 @@ button:nth-of-type(2):hover {
     display: flex;
     flex-direction: column;
   }
-
   #menu h1 {
     font-size: 2rem;
     display: flex;
@@ -250,12 +252,13 @@ button:nth-of-type(2):hover {
     border-radius: 15px;
     width: 7rem;
     height: 3.5rem;
-  } 
-
+  }
+  a {
+    font-size: 1rem;
+  }
   h1 {
     font-size: 1.8rem;
   }
-
   p {
     font-size: 5rem;
   }
