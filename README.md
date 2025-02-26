@@ -11,4 +11,4 @@ Além disso, a plataforma busca garantir uma experiência **segura** e **fluida*
 
 ---
 
-**Autores**: *@Ep3rii* e *@Dinizddc*
+**Autores**: [*@Ep3rii*](https://github.com/Ep3rii) e [*@Dinizddc*](https://github.com/Dinizddc)
