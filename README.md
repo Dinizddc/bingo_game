@@ -8,6 +8,7 @@ Este **projeto** tem como objetivo o desenvolvimento de uma **plataforma web int
 
 Além disso, a plataforma busca garantir uma experiência **fluida**, permitindo que jogadores de diferentes localidades possam se conectar e participar de jogos de forma **acessível** e **atraente**.
 
+> Jogue agora! [BINGO!](https://dinizddc.github.io/bingo_game/)
 ---
 
 **Autores**: [*@Ep3rii*](https://github.com/Ep3rii) e [*@Dinizddc*](https://github.com/Dinizddc)
