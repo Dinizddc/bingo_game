@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #A6A6A6;
+  background-color: #a6a6a6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@ body {
 
 /* Estilo para a célula central (onde a imagem ficará) */
 .celula.central {
-  background-color: #BF8049; /* Cor de fundo para a célula "Free" */
+  background-color: #bf8049; /* Cor de fundo para a célula "Free" */
   color: #000;
 }
 
@@ -53,7 +53,7 @@ body {
 
 /* Aplicar a cor da célula central nas células da coluna central */
 .linha .celula:nth-child(3) {
-  background-color: #BF8049; /* A cor da célula central */
+  background-color: #bf8049; /* A cor da célula central */
   color: #000;
 }
 
@@ -63,6 +63,6 @@ body {
 .linha:nth-child(3) .celula:nth-child(3),
 .linha:nth-child(4) .celula:nth-child(3),
 .linha:nth-child(5) .celula:nth-child(3) {
-  background-color: #BF8049; /* A mesma cor de fundo da célula central */
+  background-color: #bf8049; /* A mesma cor de fundo da célula central */
   color: #000;
 }

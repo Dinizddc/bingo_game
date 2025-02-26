@@ -1,251 +1,262 @@
-          /* Reset básico */
-          * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        /* Estilo geral do body */
-        body {
-            background-color: #f7d87b;
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* Cabeçalho Modernizado */
-        #menu {
-            background-image: url('./img/imagemdaurl.jpg');
-            position: relative;
-            width: 100%; /*largura (preencher o espaço 100%)*/
-            padding: 10px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        #menu h1 {
-            font-size: 3rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #262523; /* Cor para o título */
-        }
-        
-        /* Menu de navegação */
-        #lista {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-            padding: 0;
-        }
-        
-        /* Estilos dos links */
-        nav a {
-            text-decoration: none;              /* Remove o sublinhado padrão */
-            color: #F5F5F5;                     /* Cor clara para o texto do link */
-            font-weight: 400;                    /* Peso médio da fonte */
-            font-size: 1.0rem;                   /* Tamanho da fonte */
-            padding: 5px 5px;                   /* Espaçamento interno */
-            border-radius: 5px;                  /* Bordas arredondadas */
-            position: relative;                  /* Para usar o pseudo-elemento */
-            transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
-        }
-        
-        /* Efeito ao passar o mouse (hover) */
-        nav a:hover {
-            color: #262626;                     /* Cor escura para o destaque */
-            transform: translateY(-4px);        /* Efeito de movimentação para cima */
-            letter-spacing: 1px;                /* Aumenta o espaçamento das letras */
-        }
-        
-        
-        li {
-            /* Define o espaçamento externo entre os itens da lista (distância entre os elementos) */
-            margin: 40px;
-        
-            /* Define o tamanho da fonte dentro do <li>. O "rem" é relativo ao tamanho da fonte base */
-            font-size: 1.2rem;
-        
-            /* Define o preenchimento interno do <li>, ou seja, a distância entre o conteúdo e a borda */
-            padding: 30px;
-        
-            /* Define a largura do <li> como 60px */
-            width: 90px;
-        
-            /* Define a altura do <li> como 60px */
-            height: 25px;
-        
-            /* Adiciona uma borda de 2px de espessura, cor escura (quase preta) */
-            border: 2px solid #333;
-        
-            /* Arredonda os cantos da borda em 80%, tornando o <li> circular */
-            border-radius: 20%;
-        
-            /* Aplica o layout flexível ao <li>, permitindo que os itens filhos sejam centralizados */
-            display: flex;
-        
-            /* Alinha verticalmente o conteúdo dentro do <li> */
-            align-items: center;
-        
-            /* Alinha horizontalmente o conteúdo dentro do <li> */
-            justify-content: center;
-        
-            /* Define a cor de fundo do <li> como laranja */
-            background-color: #BF8049;
-        
-            /* Define uma transição suave para a transformação (como o efeito de aumento ao passar o mouse) */
-            transition: transform 0.3s ease;
-        }
-        
-        
-        li:hover {
-            transform: scale(1.1);
-        }
-        
-        
-        /* Títulos e textos */
-        h1, h2, h3 {
-            font-weight: 600;
-        }
-        
-        h1 {
-            margin-top: 20px;
-            font-size: 2.5rem;
-            color: #333;
-        }
-        
-        h2 {
-            font-size: 1.8rem;
-            margin-top: 30px;
-            color: #444;
-        }
-        
-        /* Estilo do campo 'Números sorteados até o momento' */
-        h3 {
-            font-size: 1.3rem;
-            margin-top: 30px;
-            color: #444;
-            padding: 5px;
-            border-radius: 0px; /* Bordas arredondadas */
-            box-shadow: 0 1px 1px rgba(0, 0, 0, 1); /* Sombra suave para dar destaque */
-            text-transform: uppercase;
-            font-weight: bold;
-        }
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
-      /* Aumentar o tamanho da fonte da contagem */
-      #contagemNumeros {
-        font-size: 1.3rem;
-        color: #444;
-      }
-        
-        /* Estilo da lista de números sorteados */
-        #numerosSorteados {
-            list-style: none;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 5px; /* Espaçamento entre os itens */
-            margin-top: 10px;
-        }
-        
-        /* Estilo dos números sorteados */
-        #numerosSorteados li {
-            font-weight: bold;
-            background-color: #BF8049; /* Cor de fundo vibrante para os números */
-            color: #F2F2F2; /* Cor do texto */
-            padding: 1px;
-            height: 3rem;
-            width: 3rem;
-            border-radius: 50%; /* Tornando os números circulares */
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        
-        
-        /* Estilo dos números sorteados */
-        p {
-            font-size: 5rem;
-            font-weight: bold;
-            color: #2f2f2f;
-        }
-        
-        
-        /* Estilo dos botões */
-        button {
-            padding: 15px 30px;
-            background-color: #E5971C; /* Cor inicial do botão */
-            color: white;
-            border: none;
-            border-radius: 30px; /* Borda mais arredondada */
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: all 0.3s ease; /* Transição suave para todos os efeitos */
-            box-shadow: 0 4px 8px #BF3C05; /* Sombra suave */
-        }
-        
-        button:hover {
-            background-color: #DC911B; /* Cor de fundo mais escura ao passar o mouse */
-            transform: scale(1.05); /* Leve aumento de tamanho */
-            box-shadow: 0 6px 12px #7F2803; /* Sombra mais forte ao passar o mouse */
-        }
-        
-        button:active {
-            background-color: #73020C; /* Cor ainda mais escura quando pressionado */
-            transform: scale(1.02); /* Reduz um pouco o tamanho */
-        }
-        
-        .button-container {
-            margin-top: 20px;
-        }
-        
-        /* Botão de "Reiniciar Jogo" com outra cor para diferenciar */
-        button:nth-of-type(2) {
-            background-color: #E5971C; /* Verde para o botão de reiniciar */
-        }
-        
-        button:nth-of-type(2):hover {
-            background-color: #DC911B; /* Cor mais escura quando hover */
-            box-shadow: 0 6px 12px #7F2803 /* Sombra verde mais forte */
-        }
-        
-        
-        /* Responsividade */
-        @media screen and (max-width: 768px) {
-            #menu {
-                display: flex;
-                flex-direction: column;
-            }
+/* Estilo geral do body */
+body {
+  background-color: #f7d87b;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
-            #menu h1 {
-                font-size: 2rem;
-                display: flex;
-                flex-direction: column;
-            }
-        
-            h1 {
-                font-size: 1.8rem;
-            }
-        
-            p {
-                font-size: 5rem;
-            }
-        
-            ul {
-                flex-direction: column; /* Torna os links verticais em telas pequenas */
-            }
-        
-            li {
-                width: 70px;
-                height: 70px;
-                font-size: 1.5rem;
-            }
-        }
-        
+/* Cabeçalho Modernizado */
+#menu {
+  background-image: url("./img/imagemdaurl.jpg");
+  position: relative;
+  width: 100%;
+  /*largura (preencher o espaço 100%)*/
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#menu h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #262523;
+  /* Cor para o título */
+}
+
+/* Menu de navegação */
+#lista {
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Estilos dos links */
+a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 400;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+/* Efeito ao passar o mouse (hover) */
+a:hover {
+  color: #262626;
+}
+
+li {
+  /* Define o espaçamento externo entre os itens da lista (distância entre os elementos) */
+  margin: 10px;
+  /* Define o tamanho da fonte dentro do <li>. O "rem" é relativo ao tamanho da fonte base */
+  font-size: 1.2rem;
+  /* Define o preenchimento interno do <li>, ou seja, a distância entre o conteúdo e a borda */
+  padding: 15px 30px;
+  /* Define a largura do <li> como 60px */
+  border: none;
+  /* Arredonda os cantos da borda em 80%, tornando o <li> circular */
+  border-radius: 15px;
+  /* Aplica o layout flexível ao <li>, permitindo que os itens filhos sejam centralizados */
+  display: flex;
+  /* Alinha verticalmente o conteúdo dentro do <li> */
+  align-items: center;
+  /* Alinha horizontalmente o conteúdo dentro do <li> */
+  justify-content: center;
+  /* Define a cor de fundo do <li> como laranja */
+  background-color: #bf8049;
+  /* Define uma transição suave para a transformação (como o efeito de aumento ao passar o mouse) */
+  transition: all 0.3s ease;
+  /* Sombra suave */
+  box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+/* Títulos e textos */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  color: #444;
+}
+
+/* Estilo do campo 'Números sorteados até o momento' */
+h3 {
+  font-size: 1.3rem;
+  margin-top: 30px;
+  color: #444;
+  padding: 5px;
+  border-radius: 0px;
+  /* Bordas arredondadas */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+  /* Sombra suave para dar destaque */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Aumentar o tamanho da fonte da contagem */
+#contagemNumeros {
+  font-size: 1.3rem;
+  color: #444;
+}
+
+/* Estilo da lista de números sorteados */
+#numerosSorteados {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  /* Espaçamento entre os itens */
+  margin-top: 10px;
+}
+
+/* Estilo dos números sorteados */
+#numerosSorteados li {
+  /* Estilo da fonte */
+  font-weight: bold;
+  /* Cor de fundo vibrante para os números */
+  background-color: #bf8049;
+  /* Cor do texto */
+  color: #f2f2f2;
+  /* Definindo espaçamento */
+  padding: 1px;
+  /* Definindo tamanho Fixo */
+  height: 3rem;
+  width: 3rem;
+  /* Tornando os números circulares */
+  border-radius: 50%;
+  /* Definindo transição */
+  transition: all 0.3s ease;
+  /* Definindo ponteiro */
+  cursor: pointer;
+}
+
+#numerosSorteados li:hover {
+  transform: scale(2);
+  font-size: 200%;
+}
+
+/* Estilo dos números sorteados */
+p {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #2f2f2f;
+}
+
+/* Estilo dos botões */
+button {
+  /* Define o preenchimento interno do <button>, ou seja, a distância entre o conteúdo e a borda */
+  padding: 15px 30px;
+  /* Cor inicial do botão */
+  background-color: #e5971c;
+  /* Cor do Conteudo interno */
+  color: white;
+  /* Estilo da borda */
+  border: none;
+  /* Borda mais arredondada */
+  border-radius: 30px;
+  /* Tamanho da fonte */
+  font-size: 1.2rem;
+  /* Estilo do ponteiro */
+  cursor: pointer;
+  /* Transição suave para todos os efeitos */
+  transition: all 0.3s ease;
+  /* Sombra suave */
+  box-shadow: 0 4px 8px #bf3c05;
+}
+
+button:hover {
+  background-color: #dc911b;
+  /* Cor de fundo mais escura ao passar o mouse */
+  transform: scale(1.05);
+  /* Leve aumento de tamanho */
+  box-shadow: 0 6px 12px #7f2803;
+  /* Sombra mais forte ao passar o mouse */
+}
+
+button:active {
+  background-color: #73020c;
+  /* Cor ainda mais escura quando pressionado */
+  transform: scale(1.02);
+  /* Reduz um pouco o tamanho */
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+/* Botão de "Reiniciar Jogo" com outra cor para diferenciar */
+button:nth-of-type(2) {
+  background-color: #e5971c;
+  /* Verde para o botão de reiniciar */
+}
+
+button:nth-of-type(2):hover {
+  background-color: #dc911b;
+  /* Cor mais escura quando hover */
+  box-shadow: 0 6px 12px #7f2803;
+  /* Sombra verde mais forte */
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  #menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menu h1 {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #lista {
+    display: flex;
+    flex-direction: row;
+  }
+  li {
+    padding: 1.5rem;
+    margin: 10px;
+    border-radius: 15px;
+    width: 7rem;
+    height: 3.5rem;
+  } 
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 5rem;
+  }
+}
